@@ -32,12 +32,13 @@ p {
   padding: 0.75rem 2rem;
   font-size: 1.1rem;
   text-decoration: none;
-  background: black;
-  color: #fff;
+
+  background: white;
+  color: black;
   border: 2px solid black;
   transition: background 0.3s ease;
 }
 .consultation-btn:hover {
-  background: white;
-  color: black;
+  background: black;
+  color: #fff;
 }
