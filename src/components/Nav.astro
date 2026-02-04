@@ -1,0 +1,42 @@
+---
+const navItems = [
+  { title: 'Home', slug: '/' },
+  { title: 'Services', slug: '/services/' },
+  { title: 'How I Work', slug: '/how-i-work/' },
+  // { title: 'Portfolio', slug: '/portfolio/' },
+  { title: 'Background', slug: '/background/' },
+];
+---
+
+<nav class="navbar">
+  <ul>
+    {navItems.map(item => (
+      <li><a href={item.slug}>{item.title}</a></li>
+    ))}
+  </ul>
+</nav>
+
+<style>
+.navbar {
+  padding: 1rem 0;
+  background: var(--nav-bg, #fff);
+  border-bottom: 1px solid #eee;
+}
+.navbar ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0 2rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--nav-link, #222);
+  font-weight: 500;
+  font-family: inherit;
+  transition: color 0.2s;
+}
+.navbar a:hover {
+  color: var(--nav-link-hover, #0070f3);
+}
+</style>

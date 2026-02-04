@@ -1,5 +1,9 @@
 ---
 import "../styles/global.css";
+import Nav from "../components/Nav.astro";
+import BookConsultation from "../components/BookConsultation.astro";
+// import CalCom from "../components/CalCom.astro";
+import Footer from "../content/footer.md";
 ---
 <!doctype html>
 <html lang="en">
@@ -16,7 +20,11 @@ import "../styles/global.css";
 	</head>
 	<body>
 		<div class="page">
+			<Nav />
 			<slot />
+			<hr>
+			<Footer />
+			<BookConsultation />
 		</div>
 	</body>
 </html>
